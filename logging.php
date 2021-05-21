@@ -42,10 +42,15 @@ function logMsg( $msg, $level = 'info', $file = 'main.log' )
     // é necessário usar FILE_APPEND para que a mensagem seja escrita no final do arquivo, preservando o conteúdo antigo do arquivo
     file_put_contents( $file, $msg, FILE_APPEND );
 
-    include 'connect.php';
+ session_start();
+
+$con=  mysqli_connect("localhost","root","","trabalho2b")
+
+
+    
 
     // $idReg = $_SESSION['id']
-    $idReg = 3;
+    $idReg = 1;
     
     $sqlInsertLogging="insert into logging (dateLogging, level, msg, fk_reg) values ('$date' , '$levelStr', '$msg', '$idReg');";    
     // $sqlInsertLogging="insert into logging (dateLogging, level, msg, fk_reg) values ('2021-04-29 11:39:42' , 'INFO', 'Teste DB v1', 3);";    

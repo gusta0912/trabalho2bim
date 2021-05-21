@@ -1,0 +1,41 @@
+*{
+	margin-left: 10px;
+	padding: 5px;
+}
+
+
+html,body{
+	height: 100%;
+	background: black;
+
+
+
+}
+
+
+a{
+	font-family:fantasy;
+	color: black;
+	text-decoration:none;
+	background: white;
+	border: solid black 1px;
+	position: relative;
+    left: 40%;
+}
+a:hover{
+text-decoration: none;
+background: blue;
+font-family: fantasy;
+}
+
+.name table{
+color: white;
+position:relative;
+left:40%;
+border:  solid white 4px;;
+margin-bottom: 200px;
+}
+.botao {
+	position:relative;
+	margin-top: -14%;
+}

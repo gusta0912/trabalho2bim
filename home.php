@@ -11,7 +11,15 @@
     <head>
         
     </head>
+
+    <link rel="stylesheet" type="text/css" href="css/stylehome.css">
+
     <body>
+
+<div class="pai">
+<div class="filho">
+<div class="name">
+
 <table>
     <tr>
         <td>
@@ -50,6 +58,8 @@ echo $f['image'];?>" width="100px" height="100px">
 
 </tr>
 </table>
+<div class="botao">
+
 <a href="edit.php">Edit</a>
 <a href="delete.php">Delete</a>
 <a href="logout.php">Logout</a>
@@ -66,8 +76,12 @@ echo $f['image'];?>" width="100px" height="100px">
         ";
     }
 ?>
-<br>
+<br><br>
 <a href="home1.php">Ir para a pagina principal</a>
+</div>
+</div>
+</div>
+</div>
 
     </body>
 </html>

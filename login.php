@@ -32,40 +32,45 @@ if(isset($_POST['sub'])){
         <title></title>
     </head>
     <body>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+        <div class ="pai">
+        <div class="filho">
+
+
         <form method="POST" enctype="multipart/form-data">
             <table>
                 
                 <tr>
                     <td>
-                        Username
+                        <b>EMAIL</b>
                         <input type="text" name="user">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        password
+                    <td> 
+                        <b>SENHA</b>
+                       
                         <input type="password" name="pass">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="sub" value="submit">
+                        <input type="submit" name="sub" value="Entrar">
                     </td>
                 </tr>
 
-                <tr>
-                    <td>
-                        <input type="submit" value="Register" name="reg">
-                               
-                    </td>
-                </tr>
+                
 
                 <tr>
                     <td>
-                        <a href="reg.php"> Register</a>
+
+                        <a href="reg.php">Registrar-se</a>
                     </td>
                 </tr>
                 
             </table>
+        </div>
+        </div>
     </body>
 </html>

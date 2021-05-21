@@ -30,25 +30,25 @@ if(isset($_POST['sub'])){
             <table>
                 <tr>
                     <td>
-                        Name
+                        <b>NOME</b>
                         <input type="text" name="text">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Username
+                        <b>EMAIL</b>
                         <input type="text" name="user">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
+                        <b>SENHA</b>
                         <input type="password" name="pass">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        city
+                        <b>CIDADE</b>
                         <select name="city">
                             <option value="">-select-</option>
 
@@ -68,22 +68,23 @@ if(isset($_POST['sub'])){
                 </tr>
                 <tr>
                     <td>
-                        Gender:
-                        <input type="radio"name="gen" id="gen" value="male">male
-                        <input type="radio" name="gen" id="gen" value="female">female
+                        <b>GENERO:</b>
+                        <input type="radio"name="gen" id="gen" value="male">M
+                        <input type="radio" name="gen" id="gen" value="female">F
                     </td>
                 </tr>
                 
                 <tr>
                     <td>
-                        Image
+                        <b>IMAGEM</b>
+
                         <input type="file" name="f1">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <input type="submit" value="submit" name="sub">
+                        <input type="submit" value="cadastrar" name="sub">
                                
                     </td>
                 </tr>
@@ -92,7 +93,7 @@ if(isset($_POST['sub'])){
                   <div class="login">
                 <tr>
                     <td>
-                        <a href="logar.php"> Login</a>
+                        <a href="login.php"> Login</a>
                     </td>
                 </tr>
             </table>
