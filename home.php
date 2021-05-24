@@ -7,50 +7,65 @@
     $f=mysqli_fetch_assoc($qu);
 
 ?>
-<html>
-    <head>
-        
-    </head>
 
-    <link rel="stylesheet" type="text/css" href="css/stylehome.css">
+  
+    <!DOCTYPE html>
 
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
 
-<div class="pai">
-<div class="filho">
-<div class="name">
 
+     <a class="links" id="paralogin"></a>
+     
+    <div class="content">    
+
+       <div id="cadastro">
+
+<form method="POST" enctype="multipart/form-data">
+
+<h1>Bem vindo</h1>
+  <p> 
+       <img src="i2.jpeg" width="150" height="150" align="middle">
+       <img src="i3.jpeg" width="150" height="150" align="right">
+</p>
 <table>
     <tr>
         <td>
-            Name
+            <b>Nome</b>
         </td><td>
             
 <?php echo $f['name'];?>
             </td>
     </tr>
     <tr>
-    <td> Username</td>
+    <td> <b>Email</b></td>
     
     <td>
             
 <?php
 echo $f['username'];?>
         </td></tr>
-<tr><td> Password</td>
+<tr><td> <b>Senha</b></td>
     <td>
 <?php
 echo $f['password']."<br>";?>
     </td></tr>
-  <tr><td> City </td>   <td>           
+  <tr><td> <b>Cidade</b> </td>   <td>           
  <?php
  echo $f['city']."<br>";?></td></tr>
   <tr>
-      <td>Gender</td>
+      <td><b>Genero  </b></td>
       <td><?php
 echo $f['gender']."<br>";?></td>
   </tr>
-  <tr><td> Image</td><td>
+  <tr><td> <b>Foto</b></td><td>
 
  <img src="<?php
 echo $f['image'];?>" width="100px" height="100px">
@@ -60,15 +75,14 @@ echo $f['image'];?>" width="100px" height="100px">
 </table>
 <div class="botao">
 
-<a href="edit.php">Edit</a>
-<a href="delete.php">Delete</a>
-<a href="logout.php">Logout</a>
+
 
 <?php
     if($_SESSION['profile']=='Admin'){
         echo "
-            <a href='viewall.php'>View All Users</a>
-            <a href='reg_city.php'>Reg City</a>
+            <a href='edit.php'><b>Edit</b></a>
+
+<a href='delete.php'><b>Delete</b></a>
         ";
     }else{
         echo "
@@ -77,7 +91,7 @@ echo $f['image'];?>" width="100px" height="100px">
     }
 ?>
 <br><br>
-<a href="home1.php">Ir para a pagina principal</a>
+<a href="home1.php"><b>Ir para a pagina principal</b></a>
 </div>
 </div>
 </div>

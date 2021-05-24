@@ -23,28 +23,47 @@ if(isset($_POST['sub'])){
     $qu= mysqli_query($con, $s);
     $f=mysqli_fetch_assoc($qu);
     ?> 
+    <!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+
+
+     <a class="links" id="paralogin"></a>
+     
+    <div class="content">    
+
+       <div id="cadastro">
+
 <form method="POST" enctype="multipart/form-data">
-            <table>
-                <tr>
-                    <td>
+
+<h1>Editar</h1>
+  <p> 
+       <img src="i2.jpeg" width="150" height="150" align="middle">
+       <img src="i3.jpeg" width="150" height="150" align="right">
+</p>
+            
+                <p>
                         Name
                         <input type="text" name="text" value="<?php echo $f['name']?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                  </p> 
+                <p>
+            
                         Username
                         <input type="text" name="user" value="<?php echo $f['username']?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                 </p>
+                 <p>
                         password
                         <input type="password" name="pass" value="<?php echo $f['password']?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                 </p>
+                      <p>
                         city
                         <select name="city">
                             <option value="">-select-</option>
@@ -65,11 +84,12 @@ if(isset($_POST['sub'])){
                                 }
                             }
                             ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender
+                            genero
+                            </p>
+
+                    <p>
+
+                    
                         <?php if($f['gender']=='male'){
                             ?>
                           <input type="radio"name="gen" id="gen" value="male" checked>
@@ -77,7 +97,7 @@ if(isset($_POST['sub'])){
                         } else {
 ?>
                         <input type="radio"name="gen" id="gen" value="male">
-                        <?php } ?>male
+                        <?php } ?>M
                        <?php if($f['gender']=='female'){
                             ?>
                           <input type="radio"name="gen" id="gen" value="female" checked>
@@ -85,23 +105,20 @@ if(isset($_POST['sub'])){
                         } else {
 ?>
                         <input type="radio"name="gen" id="gen" value="female">
-                        <?php } ?>female
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                        <?php } ?>F
+                        genero
+                    </p>
+                    <p>
                         Image
                         <img src="<?php echo $f['image']?>" width="100px" height="100px">
                         <input type="file" name="f1">
                         <input type="hidden" name="img1" value="<?php echo $f['image']?>">
                         
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </p>
+                    <p>
+                   
                         <input type="submit" value="submit" name="sub">
                                
-                    </td>
-                </tr>
-            </table>
+                   </p>
+            
 </form>

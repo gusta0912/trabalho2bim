@@ -25,40 +25,47 @@ if(isset($_POST['sub'])){
   
 }
 ?>
-<html>
-      
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-
-<link rel="stylesheet" type="text/css" href="css/style.css">
-        <div class ="pai">
-        <div class="filho">
+<!DOCTYPE html>
 
 
-        <form method="POST" enctype="multipart/form-data">
-            <table>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+
+
+     <a class="links" id="paralogin"></a>
+     
+    <div class="content">  
+    <!--FORMULÁRIO DE LOGIN-->
+
+
+      <div id="login">
+        <form method="post" action="home.php"> 
+          <h1>Login</h1> 
+<p> 
+       <img src="i2.jpeg" width="150" height="150" align="middle">
+       <img src="i3.jpeg" width="150" height="150" align="right">
+</p>
+     
                 
-                <tr>
-                    <td>
+                <p>
                         <b>EMAIL</b>
                         <input type="text" name="user">
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
+                    </p>
+                    <p>
                         <b>SENHA</b>
                        
                         <input type="password" name="pass">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                   </p>
+                   <p>
                         <input type="submit" name="sub" value="Entrar">
-                    </td>
-                </tr>
+                    </p>
 
                 
 
