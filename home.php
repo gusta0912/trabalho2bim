@@ -92,6 +92,8 @@ echo $f['image'];?>" width="100px" height="100px">
 ?>
 <br><br>
 <a href="home1.php"><b>Ir para a pagina principal</b></a>
+<br><br>
+<a href="logging.php"><b>Clique aqui para resgistar o seu logging</b></a>
 </div>
 </div>
 </div>

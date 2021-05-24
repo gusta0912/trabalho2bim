@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 // Conexão com banco de dados 
 include'connect.php';
@@ -25,47 +25,41 @@ if(isset($_POST['sub'])){
   
 }
 ?>
-<!DOCTYPE html>
+<html>
+      
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+
+<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+        <div class ="pai">
+        <div class="filho">
 
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-  <div class="container" >
-    <a class="links" id="paracadastro"></a>
-
-
-     <a class="links" id="paralogin"></a>
-     
-    <div class="content">  
-    <!--FORMULÁRIO DE LOGIN-->
-
-
-      <div id="login">
-        <form method="post" action="home.php"> 
-          <h1>Login</h1> 
-<p> 
-       <img src="i2.jpeg" width="150" height="150" align="middle">
-       <img src="i3.jpeg" width="150" height="150" align="right">
-</p>
-     
+        <form method="POST" enctype="multipart/form-data">
+            <table>
+                <img src="i2.jpeg">
                 
-                <p>
+                <tr>
+                    <td>
                         <b>EMAIL</b>
                         <input type="text" name="user">
-                    </p>
-                    <p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
                         <b>SENHA</b>
                        
                         <input type="password" name="pass">
-                   </p>
-                   <p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <input type="submit" name="sub" value="Entrar">
-                    </p>
+                    </td>
+                </tr>
 
                 
 

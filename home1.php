@@ -21,10 +21,10 @@ body {font-family: "Lato", sans-serif}
     <a href="home.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SEU PERFIL</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <button class="w3-padding-large w3-button" title="More">VER MAIS <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="#" class="w3-bar-item w3-button">ver medicos disponiveis</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button"></a>
         <a href="#" class="w3-bar-item w3-button">Media</a>
       </div>
     </div>
