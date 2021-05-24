@@ -20,7 +20,7 @@
       <div id="cadastro">
         <form method="post" action=""> 
 
-          <h1>Cadastro de empresas</h1> 
+          <h1>Carrinho de compras</h1> 
 
   <p> 
        <img src="i2.jpeg" width="150" height="150" align="middle">
@@ -86,6 +86,8 @@
       
     }
     
+
+    echo'<a href="index.php">Adicionar mais prudutos</a><br>';
 
     echo'<a href="finalizar.php">Finalizar Pedido</a>';
   }

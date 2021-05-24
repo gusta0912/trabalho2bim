@@ -20,7 +20,7 @@
       <div id="cadastro">
         <form method="post" action=""> 
 
-          <h1>Cadastro de empresas</h1> 
+          <h1>Produtos disponiveis</h1> 
 
   <p> 
        <img src="i2.jpeg" width="150" height="150" align="middle">
@@ -39,7 +39,7 @@
    	echo 'Nome do produto: '.$produto['nome'].' ; Quantidadade: '.$produto['quantidade'].'
             ; Preço: R$ '.number_format($produto['preco'],2,",",".").'
    	      <a href="carrinho.php?add=carrinho&id='.$produto['id'].'">Adicionar ao carrinho</a>
-   	      <br/>';
+   	      <br/><br>';
 
    }
 
