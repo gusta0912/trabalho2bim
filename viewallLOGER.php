@@ -41,6 +41,9 @@
         <th>
             DATA LOGIN
         </th>
+        <th>
+            ID PESSOA LOGADA
+        </th>
     </tr>
 
 <?php
@@ -54,6 +57,9 @@ while($f=  mysqli_fetch_assoc($qu)){
         </td>
         <td>
             <?php echo $f['dateLogging']?>
+        </td>
+        <td>
+            <?php echo $f['fk_reg']?>
         </td>
     </tr>
     <?php
